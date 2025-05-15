@@ -11,9 +11,17 @@ config_version=5
 [application]
 
 config/name="SeedsOfMana"
+run/main_scene="uid://cr51vvsr4ckif"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=420
+window/size/viewport_height=236
+window/stretch/mode="canvas_items"
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"

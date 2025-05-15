@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://2o7ujw5a6bdl"]
+
+[ext_resource type="Texture2D" uid="uid://d8e6qshcup74" path="res://Graphics/PixyMoon/Character_001_Atlas.tres" id="1_xhfnw"]
+
+[node name="Player" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_xhfnw")
+region_enabled = true
+region_rect = Rect2(6, 8, 11, 15)
