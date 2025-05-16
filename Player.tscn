@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://2o7ujw5a6bdl"]
+[gd_scene load_steps=3 format=3 uid="uid://2o7ujw5a6bdl"]
 
+[ext_resource type="Script" uid="uid://bbpcohew1ixh" path="res://Scripts/player.gd" id="1_kpjcp"]
 [ext_resource type="Texture2D" uid="uid://d8e6qshcup74" path="res://Graphics/PixyMoon/Character_001_Atlas.tres" id="1_xhfnw"]
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_kpjcp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
