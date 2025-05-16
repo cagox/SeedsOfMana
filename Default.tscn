@@ -5,4 +5,5 @@
 [node name="Default" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_mf5ip")]
-position = Vector2(258, 134)
+
+[node name="Main Camera" type="Camera2D" parent="."]

@@ -21,6 +21,10 @@ window/size/viewport_width=420
 window/size/viewport_height=236
 window/stretch/mode="canvas_items"
 
+[dotnet]
+
+project/assembly_name="SeedsOfMana"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

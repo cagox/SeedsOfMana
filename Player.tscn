@@ -2,8 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d8e6qshcup74" path="res://Graphics/PixyMoon/Character_001_Atlas.tres" id="1_xhfnw"]
 
-[node name="Player" type="RigidBody2D"]
-gravity_scale = 0.0
+[node name="Player" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
