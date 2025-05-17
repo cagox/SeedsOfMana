@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-var movement_speed : float = 60.0
+var movement_speed : float = 2000.0
 var character_direction : Vector2
 
 enum States {
@@ -29,16 +29,16 @@ func perform_state_actions(delta):
 			character_direction = character_direction.normalized()
 			
 			if character_direction.x < 0 && character_direction.y == 0:
-				$Sprite.animation = "walkLeft"
+				$Sprite.play("walkLeft")
 			if character_direction.x > 0 && character_direction.y == 0:
-				$Sprite.animation = "walkRight"
+				$Sprite.play("walkRight")
 			if character_direction.y < 0:
-				$Sprite.animation = "walkUp"
+				$Sprite.play("walkUp")
 			if character_direction.y > 0:
-				$Sprite.animation = "walkDown"
+				$Sprite.play("walkDown")
 			
-			velocity = character_direction * movement_speed
+			velocity = character_direction * movement_speed * delta
 			
 		States.IDLE:
-			velocity = velocity.move_toward(Vector2.ZERO, movement_speed)
-			$Sprite.animation = "idle"
+			velocity = velocity.move_toward(Vector2.ZERO, movement_speed * delta)
+			$Sprite.play("idle")

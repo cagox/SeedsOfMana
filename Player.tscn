@@ -168,6 +168,7 @@ region_rect = Rect2(6, 8, 11, 15)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_efikj")
 animation = &"idle"
+frame_progress = 0.00553568
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 8)
