@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-var movement_speed : float = 2000.0
+var movement_speed : float = 6000.0
 var character_direction : Vector2
 
 enum States {
@@ -42,3 +42,7 @@ func perform_state_actions(delta):
 		States.IDLE:
 			velocity = velocity.move_toward(Vector2.ZERO, movement_speed * delta)
 			$Sprite.play("idle")
+			
+func place_player(x: int,y: int):
+	global_position.x = x
+	global_position.y = y
